@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Pais: <input type="texte" name="pais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var txtp = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res') 
+            res.innerHTML = `<p>Seu Pais de origem  é  <strong>${'res'} </strong></p>`
+            var txtp = 'Brasil' 
+            if (pais != 'Brasil') { 
+                res.innerHTML = `Voce é ${txtpais}`
+            } else { 
+                res.innerHTML = `Voce é Estrageiro`
+            } 
+
+        }
+    </script>
+</body>
+</html>
